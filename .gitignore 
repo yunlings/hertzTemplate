@@ -1,4 +1,3 @@
-.idea
-.git
-.gitignore
+.idea/
+.git/
 .DS_Store
