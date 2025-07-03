@@ -1,0 +1,5 @@
+{"level":"info","time":"2025-06-18T16:00:52.243+0800","msg":"HERTZ: Using network library=netpoll"}
+{"level":"info","time":"2025-06-18T16:00:52.244+0800","msg":"HERTZ: HTTP server listening on address=[::]:9988"}
+{"level":"info","time":"2025-06-18T16:01:48.136+0800","msg":"status=200 cost=750.958µs method=GET full_path=/ping client_ip=127.0.0.1 host=127.0.0.1:9988"}
+{"level":"info","time":"2025-06-18T16:02:44.657+0800","msg":"HERTZ: Received signal: interrupt\n"}
+{"level":"info","time":"2025-06-18T16:02:44.657+0800","msg":"HERTZ: Begin graceful shutdown, wait at most 10s ..."}
