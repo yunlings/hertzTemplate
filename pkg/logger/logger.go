@@ -68,3 +68,15 @@ func InfoX(c *app.RequestContext, format string, v ...interface{}) {
 	hlog.Infof("%s", jsonData)
 
 }
+
+func ErrorX(c *app.RequestContext, format string, v ...interface{}) {
+
+	logData := map[string]interface{}{
+		"traceId": getRequestID(c),
+		"custmsg": fmt.Sprintf(format, v...),
+	}
+	jsonData, _ := json.Marshal(logData)
+
+	hlog.Errorf("%s", jsonData)
+
+}
