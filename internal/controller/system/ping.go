@@ -2,21 +2,20 @@ package system
 
 import (
 	"context"
-	"hertzTemplate/pkg/constant"
-	"hertzTemplate/pkg/logger"
-	"hertzTemplate/pkg/response"
 	"time"
+
+	"github.com/cloudwego/hertz/pkg/protocol/consts"
 
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/common/utils"
 )
 
 func Ping(ctx context.Context, c *app.RequestContext) {
-	//c.JSON(consts.StatusOK, utils.H{
-	//	"message": "pong",
-	//})
-	logger.InfoX(c, "这是自定义消息%s", c.Request.Header.Get("Host"))
-	response.Error(c, constant.CodeNotFound, nil)
+	c.JSON(consts.StatusOK, utils.H{
+		"message": "pong",
+	})
+	//logger.InfoX(c, "这是自定义消息%s", c.Request.Header.Get("Host"))
+	//response.Error(c, constant.CodeNotFound, nil)
 
 }
 
